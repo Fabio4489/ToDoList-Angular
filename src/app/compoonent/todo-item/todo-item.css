@@ -5,9 +5,12 @@ ul{
 .grid{
     margin-top: 15px;
     display: grid;
-    grid-template-columns: auto 100px 100px;
+    grid-template-columns: 20px auto 25px;
 }
 li{
+    grid-column: 2; 
+    align-self: center;   
+    justify-self: center; 
     padding: 0;
     margin-right: 15px;
     list-style-type: none;
@@ -18,23 +21,18 @@ li{
     margin-right: 5px;
     cursor: pointer;
 }
+.btn-ok, .btn-no{
+    width: 25px;
+}
 .btn-no{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: rgb(190, 0, 0);
     color: white;
     box-shadow: 2px 2px 3px rgb(109, 1, 1);
 }
-.btn-ok{
-    /* background-color: rgb(0, 190, 0);
-    color: white;
-    box-shadow: 2px 2px 3px rgb(1, 109, 1); */
-}
-/* .no_completato{
-
-} */
 .si_completato{
     color: rgb(211, 196, 196);
     text-decoration: line-through rgb(226, 3, 3) 1.5px;
 }
-/* .checkalo{
-    
-} */
