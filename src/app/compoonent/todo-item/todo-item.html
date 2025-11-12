@@ -1,0 +1,45 @@
+<div>
+    <ul >
+        <div *ngFor="let t of listaTodos; index as i">
+            <div class="grid" *ngIf="t.completato; else elseBlock">
+                <input class="btn-ok" id="li" name="li" type="checkbox" (click)="completatoTodo(i)" checked/>
+                <li class='si_completato'>
+                    {{t.nome}}
+                </li>
+                <button class="btn-no" (click)="cancellaTodo(i)">Cancella</button>
+            </div>
+            <ng-template #elseBlock>
+                <div class="grid">
+                    <input class="btn-ok" id="li" name="li" type="checkbox" (click)="completatoTodo(i)"/>
+                    <li >
+                        {{t.nome}}
+                    </li>
+                    <button class="btn-no" (click)="cancellaTodo(i)">Cancella</button>
+                </div>
+            </ng-template>
+
+        </div>
+    </ul>    
+</div>
+
+
+<!-- <div>
+    <ul >
+        <div class="grid" *ngFor="let t of listaTodos; index as i">
+            <div *ngIf="t.completato; else elseBlock">
+                <input class="btn-ok" id="li" name="li" type="checkbox" (click)="completatoTodo(i)" checked/>
+                <li class='si_completato'>
+                    {{t.nome}}
+                </li>
+                <button class="btn-no" (click)="cancellaTodo(i)">Cancella</button>
+            </div>
+            <ng-template #elseBlock>
+                    <input class="btn-ok" id="li" name="li" type="checkbox" (click)="completatoTodo(i)"/>
+                    <li>
+                        {{t.nome}}
+                    </li>
+                    <button class="btn-no" (click)="cancellaTodo(i)">X</button>
+            </ng-template>
+        </div>
+    </ul>    
+</div> -->

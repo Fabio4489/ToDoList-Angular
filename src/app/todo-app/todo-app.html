@@ -1,0 +1,11 @@
+<div class="container">
+    <div class="header">
+        <h1>{{title()}}</h1>
+    </div>
+    <div class="resto">
+        <app-todo-add (nuovoTodo)="aggiungiLista($event)"/>
+        <app-todo-item [listaTodos]="listaTodo" (indiceCanc)="cancellaTodo($event)" (indiceCompl)="completaTodo($event)"/>
+    </div>
+</div>
+<div class="tondo1"></div>
+<div class="tondo2"></div>

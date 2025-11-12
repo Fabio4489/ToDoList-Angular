@@ -1,0 +1,40 @@
+ul{
+    margin: 0;
+    padding: 0;
+}
+.grid{
+    margin-top: 15px;
+    display: grid;
+    grid-template-columns: auto 100px 100px;
+}
+li{
+    padding: 0;
+    margin-right: 15px;
+    list-style-type: none;
+}
+.btn-no{
+    border-radius: 25px;
+    border: none;
+    margin-right: 5px;
+    cursor: pointer;
+}
+.btn-no{
+    background-color: rgb(190, 0, 0);
+    color: white;
+    box-shadow: 2px 2px 3px rgb(109, 1, 1);
+}
+.btn-ok{
+    /* background-color: rgb(0, 190, 0);
+    color: white;
+    box-shadow: 2px 2px 3px rgb(1, 109, 1); */
+}
+/* .no_completato{
+
+} */
+.si_completato{
+    color: rgb(211, 196, 196);
+    text-decoration: line-through rgb(226, 3, 3) 1.5px;
+}
+/* .checkalo{
+    
+} */
